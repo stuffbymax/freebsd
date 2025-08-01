@@ -14,9 +14,9 @@ echo ">>> Installing XFCE and LightDM..."
 sudo pkg install -y xfce xfce4-goodies lightdm lightdm-gtk-greeter
 
 echo ">>> Enabling desktop services..."
-sudo sysrc dbus_enable=YES
-sudo sysrc hald_enable=YES
-sudo sysrc lightdm_enable=YES
+sudo sysrc dbus_enable="YES"
+sudo sysrc hald_enable="YES"
+sudo sysrc lightdm_enable="YES"
 
 echo ">>> Creating .xinitrc for fallback start..."
 echo "exec startxfce4" > ~/.xinitrc
